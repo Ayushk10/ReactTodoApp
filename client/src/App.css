@@ -1,0 +1,159 @@
+body {
+  font-family: 'Teko';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+  box-sizing: border-box;
+  background: #833ab4; 
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: bold;
+  margin-top: 0.67em;
+}
+
+.todo-list {
+  padding-top: 10px;
+  width: 90vw;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 3px 10px;
+  font-size: .7em;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display: flex;
+  color: #000;
+}
+
+input#form-check-input {
+  margin: 7px 0;
+}
+
+.todo-text {
+  cursor: pointer;
+  width: 75%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.buttonsWrapper {
+  width: 25%;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.todo button {
+  color: #f37070;
+  background: transparent;
+  margin: 0 3px;
+}
+
+input {
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 7px 10px;
+  font-size: .5em;
+  border-radius: 4px;
+  margin: 0 14px 0 7px;
+  color: #000;
+  outline: 0;
+  border: 0;
+  flex: 1;
+}
+
+form {
+  border-top: 1px solid;
+  display: flex;
+  padding-top: 10px;
+  margin-top: 10px;
+  width: 90vw;
+}
+
+form button {
+  color: #2980B9;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  padding: 0 15px;
+}
+
+.error {
+  font-size: 16px;
+  color: #f37070;
+}
+
+.dueDate {
+  font-size: 18px;
+}
+
+label.labelText {
+  font-size: 21px;
+}
+
+.markAll {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  color: #2980B9;
+  background: #fff;
+  border-radius: 4px;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.green {
+  color: green;
+}
+span.todo-text p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    flex-flow: column;
+  }
+  form button {
+    padding: 14px 15px;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 700;
+  }
+  .fieldContainer {
+    margin-bottom: 20px;
+  }
+  .markAll {
+    margin-top: 10px;
+  }
+}
