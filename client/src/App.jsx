@@ -13,7 +13,7 @@ const TodoApp = () => {
   // load items array from localStorage, set in state
   if (!hasTasks && newSessionRef.current) {
     let itemsList = JSON.parse(localStorage.getItem('tasks'));
-    if(itemsList.length){
+    if(itemsList && itemsList.length){
       setTasks(itemsList);
     }
   }
