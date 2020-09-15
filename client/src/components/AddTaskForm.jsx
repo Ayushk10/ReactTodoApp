@@ -35,7 +35,7 @@ const AddTaskForm = ({ addTask }) => {
         </div>
         <div className="fieldContainer">
             <label className="labelText" for="dueDate">Due Date:</label>
-            <input type="date" id="dueDate" name="due date" value={dueDate.value}
+            <input type="date" id="dueDate" name="due date" value={dueDate.value||'dd-mm-yyyy'}
             onChange={dateInputHandler}/>
         </div>
             <button className="button" type="submit">ADD</button>
